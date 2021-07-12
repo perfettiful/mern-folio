@@ -61,7 +61,7 @@ const About = () => {
           <a
             className="linked-size btn btn-sm btn-outline-primary"
             id="linked-in"
-            href="http://linkedin.com/in/josh-a-9865bb175"
+            href="https://www.linkedin.com/in/nathanperfetti/"
             target="_blank"
             rel="noopener noreferrer">
             <i className="mx-1 linked-size fab fa-linkedin icon-small" />
