@@ -35,7 +35,7 @@ const About = () => {
   return (
     <div className="card shadow mx-auto mt-4">
       <div className="card-body text-center">
-        <img src='{ProfilePic}'/>
+        <img width='100%' className='profileImg' src='https://raw.githubusercontent.com/perfettiful/mern-folio/main/public/NatePerfetti.png'/>
         <h4 className="title">Nathan Perfetti</h4>
         <h5 className="title2 font-italic">Certified Full Stack Web Developer & Educator</h5>
         <p className="card-text">nathanperfetti@gmail.com</p>

@@ -38,6 +38,11 @@ body {
   background-attachment: fixed !important;
 }
 
+.profileImg{
+  width:100%;
+  max-width: 300px;
+}
+
 @keyframes react {
   from {
     transform: rotate(0deg);
