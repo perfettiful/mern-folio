@@ -12,6 +12,7 @@ import { ReactComponent as Python } from '../images/python.svg';
 import { ReactComponent as Django } from '../images/django.svg';
 import { ReactComponent as Git } from '../images/git.svg';
 
+
 const About = () => {
   const images = [
     <HTML name="HTML5" id="html" />,
@@ -25,7 +26,8 @@ const About = () => {
     <Node name="Node.js" id="node" />,
     <Python name="Python" id="python" />,
     <Django name="Django" id="django" />,
-    <Git name="Git" id="git" />
+    <Git name="Git" id="git" />,
+
   ];
 
   const [icons, updateImages] = useState(images);
@@ -33,6 +35,7 @@ const About = () => {
   return (
     <div className="card shadow mx-auto mt-4">
       <div className="card-body text-center">
+        <img src='{ProfilePic}'/>
         <h4 className="title">Nathan Perfetti</h4>
         <h5 className="title2 font-italic">Certified Full Stack Web Developer & Educator</h5>
         <p className="card-text">nathanperfetti@gmail.com</p>
