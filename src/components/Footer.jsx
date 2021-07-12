@@ -21,7 +21,7 @@ const Footer = () => {
           >
             <i className="text-light mx-1 fab fa-linkedin-in icon-large" />
           </a>
-          <p> @perfettiful</p>
+
         </Animated>
       </footer>
     </React.Fragment>
