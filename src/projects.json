@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "name": "curren$ee",
+    "image": "https://user-images.githubusercontent.com/42519030/57336512-2cf38a00-70f4-11e9-9e00-909f9d0670fe.gif",
+    "description": "A budgeting app built with the MongoDB, Express, React, Node.js (MERN) stack. Worked on a team of 3 for this project. Users can manage their budget, search for products on Walmart.com and add them to their budget, view stock and crypto charts, and visualize their money flow over time with a table and multiple charts.",
+    "github": "https://github.com/jhadev/currensee",
+    "link": "https://pacific-ridge-46060.herokuapp.com/",
+    "tech": "React, React-Router, Node.js, Material-UI, Prime-React, Chart.js, MongoDB, Express, Axios, Moment.js, Passport, Mongoose, Reactstrap, Concurrently, Walmart API, react-tradingview"
+  },
+  {
+    "id": 2,
+    "name": "Just Another Chat",
+    "image": "https://user-images.githubusercontent.com/42519030/64911367-decc4400-d6ee-11e9-95eb-0407e6e63485.jpg",
+    "description": "A live chat app built with React and Firebase. Users can sign up and chat in various rooms and view all the currently registered users to direct message each other. Image uploading is handled with Cloudinary and link, image, video (mp4), audio (mp3) urls will display their content inline.",
+    "github": "https://github.com/jhadev/react-firebase-chat",
+    "link": "https://radiant-wave-85955.herokuapp.com/",
+    "tech": "React, React Hook and Context APIs, Sass, Cloudinary, React-Router-Dom, Reactstrap, Recompose, Emoji-mart, Moment.js, Firebase, SweetAlert"
+  },
+  {
+    "id": 3,
+    "name": "use-form",
+    "image": "https://user-images.githubusercontent.com/42519030/70198587-3e7a3000-16dd-11ea-9bb1-04666a5d1cec.jpg",
+    "description": "A custom React hook to generate stateful forms. Can map state into input fields in a few lines of code. Individual items in state can also be filtered to produce a custom form that isn't dependent on every item in state. Published on npm.",
+    "github": "https://github.com/jhadev/use-form",
+    "link": "https://www.npmjs.com/package/@jhadev/use-form",
+    "tech": "React, Babel"
+  },
+  {
+    "id": 4,
+    "name": "Raffle",
+    "image": "https://user-images.githubusercontent.com/42519030/70197166-f22cf100-16d8-11ea-990a-61788a852565.jpg",
+    "description": "Built with Svelte. As simple as adding the entrant's name and number of entries and hitting submit. Allows users to save their entries to local storage and load them with ease. Randomizes multiple times and displays a shuffling animation when picking a winner.",
+    "github": "https://github.com/jhadev/raffle-v2",
+    "link": "https://raffle-v2.joshappeldev.now.sh/",
+    "tech": "Svelte, Bootstrap, Animate.css, Moment.js"
+  },
+  {
+    "id": 5,
+    "name": "CLI Hangman",
+    "image": "https://user-images.githubusercontent.com/42519030/70198493-0b37a100-16dd-11ea-9589-eef17e48bb14.jpg",
+    "description": "A Node.js command line Hangman game based on TV Shows. Uses TVMaze API to fetch a list of the top rated TV Shows to use as the choices for the word guess. Tracks top scores locally and has a unique scoring system so players have to make a decision whether to keep playing or to call it quits while they are ahead.",
+    "github": "https://github.com/jhadev/cli-hangman",
+    "link": null,
+    "tech": "JavaScript, Node.js, Babel, Chalk, Inquirer, Moment.js, Axios"
+  },
+  {
+    "id": 6,
+    "name": "Perfecto Importers",
+    "image": "https://user-images.githubusercontent.com/42519030/57555765-2444c300-7343-11e9-839c-7ad23b6dc85e.jpg",
+    "description": "A full stack application built for a wine importer. End product will allow potential customers and wine buyers to learn about the company and their wine portfolio and calculate costs of a potential order. It will also allow the owner of the company to easily add wines to the database through an admin panel.",
+    "github": "https://github.com/jhadev/perfecto",
+    "github_alt": "https://github.com/jhadev/perfecto-backend",
+    "link": null,
+    "tech": "React, Bulma, Axios, React-Router-Dom, Python, Django, PostgreSQL, Django REST Framework"
+  },
+  {
+    "id": 7,
+    "name": "Sounds (Front End)",
+    "image": "https://user-images.githubusercontent.com/42519030/57633012-ceedf900-7570-11e9-90d2-152fc3cd8123.jpg",
+    "description": "A base to make a soundboard for anything. Another developer can clone this project and create their own soundboard in 2 steps as everything is dynamically created. Download below and test it out with your favorite TV show or movie as a theme.",
+    "github": "https://github.com/jhadev/sounds",
+    "link": "https://jhadev.github.io/sounds/",
+    "tech": "HTML, CSS, JavaScript, jQuery, Bootstrap, FontAwesome, Animate.css"
+  },
+  {
+    "id": 8,
+    "name": "Sounds (Full Stack)",
+    "image": "https://user-images.githubusercontent.com/42519030/57780679-bc053100-76f6-11e9-9445-5ec8da2009ba.jpg",
+    "description": "Building on top of the front end version below, this version adds a backend using the Django REST Framework and PostgreSQL to manage data for the soundboards. Easily expandable by creating new Django apps for different themes.",
+    "github": "https://github.com/jhadev/py-sounds",
+    "link": "https://pacific-brushlands-87351.herokuapp.com/",
+    "tech": "Python, Django, Django REST Framework, WhiteNoise, Gunicorn, PostgreSQL, HTML, CSS, JavaScript, jQuery, Bootstrap, FontAwesome, Animate.css"
+  },
+  {
+    "id": 9,
+    "name": "Quizzes",
+    "image": "https://user-images.githubusercontent.com/42519030/55992168-eab46580-5c79-11e9-9c6d-8f0f6b3b242c.jpg",
+    "description": "A set of timed quizzes that can easily be adapted and combined by changing a few lines of code. I created this to get a better understanding of Object Oriented Programming and to test the Parcel bundler in a development environment.",
+    "github": "https://github.com/jhadev/parcel-quiz",
+    "link": "https://jhadev.github.io/parcel-quiz/",
+    "tech": "HTML, CSS, JavaScript, jQuery, Bootstrap, Lodash, Parcel.js"
+  }
+]
