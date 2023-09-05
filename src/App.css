@@ -38,9 +38,18 @@ body {
   background-attachment: fixed !important;
 }
 
-.profileImg{
-  width:100%;
-  max-width: 300px;
+.profileImg {
+  width: 350px; 
+  height: 350px; 
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.circular-image .profileImg  {
+  width: 250px; 
+  height: 250px; 
+  object-fit: cover;
 }
 
 @keyframes react {

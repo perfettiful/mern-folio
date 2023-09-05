@@ -1,8 +1,12 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://perfettiful.github.io/mern-folio",
+  "homepage": "https://nathanperfetti.dev",
   "private": true,
+  "engines": {
+    "node": "16",
+    "npm": "7"
+  },
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "add": "^2.0.6",
