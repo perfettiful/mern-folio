@@ -4,23 +4,18 @@
   "homepage": "https://nathanperfetti.dev",
   "private": true,
   "engines": {
-    "node": "16",
-    "npm": "7"
+    "node": "18",
+    "npm": "9"
   },
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
-    "add": "^2.0.6",
     "animate.css": "^3.7.0",
     "bootstrap": "^4.3.1",
-    "gh-pages": "^2.1.1",
-    "react": "^16.8.3",
+    "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.11",
-    "react-animate-on-scroll": "^2.1.5",
     "react-animated-css": "^1.0.4",
-    "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5",
-    "reactstrap": "^7.1.0",
-    "yarn": "^1.13.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "reactstrap": "^9.2.0"
   },
   "scripts": {
     "predeploy": "npm run build",
