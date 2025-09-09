@@ -28,7 +28,7 @@ const ContactForm = () => {
               <input
                 className="form-control"
                 type="email"
-                placeholder="nathanperfetti@gmail.com"
+                placeholder="your.email@example.com"
                 name="_replyto"
               />
               {/* <small id="email-help" className="form-text text-muted">
