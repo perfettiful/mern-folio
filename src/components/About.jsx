@@ -38,7 +38,6 @@ const About = () => {
         </div>
         <h4 className="title">Nathan Perfetti</h4>
         <h5 className="title2 font-italic">Certified Full Stack Web Developer & Educator</h5>
-        <p className="card-text">nathanperfetti@gmail.com</p>
 
         <p className="card-text px-4 py-2">
           I believe strongly in the power of well-crafted software. Feel free to reach out for a collaborator or consultant on your next project. I enjoy
