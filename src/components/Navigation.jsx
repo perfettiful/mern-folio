@@ -45,7 +45,7 @@ class Navigation extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={this.toggle} className="link" href="#resume">
+                <NavLink className="link" href="/Nathan-Perfetti-Resume-10-25.pdf" target="_blank" rel="noopener noreferrer">
                   Resume
                 </NavLink>
               </NavItem>
