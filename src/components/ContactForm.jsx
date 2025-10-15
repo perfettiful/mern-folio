@@ -1,17 +1,6 @@
 import React from "react";
-import { trackFormSubmission, trackContactForm } from "../utils/analytics";
 
 const ContactForm = () => {
-  const handleFormSubmit = (e) => {
-    // Track form submission
-    trackFormSubmission('contact_form');
-    trackContactForm('submit');
-  };
-
-  const handleInputFocus = (fieldName) => {
-    trackContactForm(`focus_${fieldName}`);
-  };
-
   return (
     <div className="col-md-6 col-12">
       <div className="contact-card card shadow mt-4 mb-5">
@@ -21,7 +10,6 @@ const ContactForm = () => {
             action="https://formspree.io/mdoylanr"
             method="POST"
             target="_blank"
-            onSubmit={handleFormSubmit}
           >
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -30,7 +18,6 @@ const ContactForm = () => {
                 type="text"
                 placeholder="Name"
                 name="name"
-                onFocus={() => handleInputFocus('name')}
               />
               {/* <small id="help" className="form-text text-muted">
                 Enter your name.
