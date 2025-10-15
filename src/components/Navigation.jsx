@@ -40,15 +40,6 @@ class Navigation extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  onClick={this.toggle}
-                  className="link"
-                  href="#portfolio"
-                >
-                  Portfolio
-                </NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink onClick={this.toggle} className="link" href="#contact">
                   Contact
                 </NavLink>
