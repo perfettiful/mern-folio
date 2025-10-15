@@ -50,6 +50,7 @@ body {
   width: 250px; 
   height: 250px; 
   object-fit: cover;
+  border: 2px solid #292e49;
 }
 
 @keyframes react {
