@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import projects from '../projects.json';
-import ProjectCard from './ProjectCard';
 import ContactForm from './ContactForm';
 import About from './About';
 import { Animated } from 'react-animated-css';
