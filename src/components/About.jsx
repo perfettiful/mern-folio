@@ -1,33 +1,28 @@
 import React from 'react';
-import { ReactComponent as HTML } from '../images/html5.svg';
-import { ReactComponent as CSS } from '../images/css3.svg';
-import { ReactComponent as JS } from '../images/javascript.svg';
-import { ReactComponent as JQuery } from '../images/jquery.svg';
-import { ReactComponent as ReactImage } from '../images/react.svg';
-import { ReactComponent as MySQL } from '../images/mysql.svg';
-import { ReactComponent as Mongo } from '../images/mongodb.svg';
-import { ReactComponent as Firebase } from '../images/firebase.svg';
-import { ReactComponent as Node } from '../images/node-dot-js.svg';
-import { ReactComponent as Python } from '../images/python.svg';
-import { ReactComponent as Django } from '../images/django.svg';
-import { ReactComponent as Git } from '../images/git.svg';
+import reactLogo from '../images/react.svg';
+import angularLogo from '../images/angular.svg';
+import typescriptLogo from '../images/typescript.svg';
+import tailwindLogo from '../images/tailwindcss.svg';
+import djangoLogo from '../images/django.svg';
+import postgresqlLogo from '../images/postgresql.svg';
+import dockerLogo from '../images/docker.svg';
+import awsLogo from '../images/aws.svg';
+import azureLogo from '../images/azure.svg';
+import dotnetLogo from '../images/dotnet.png';
 
 
 const About = () => {
-  const images = [
-    <HTML name="HTML5" id="html" />,
-    <CSS name="CSS3" id="css" />,
-    <JS name="JS ES6+" id="js" />,
-    <JQuery name="jQuery" id="jquery" />,
-    <ReactImage name="React" id="react" />,
-    <MySQL name="MySQL" id="mysql" />,
-    <Mongo name="MongoDB" id="mongo" />,
-    <Firebase name="Firebase" id="firebase" />,
-    <Node name="Node.js" id="node" />,
-    <Python name="Python" id="python" />,
-    <Django name="Django" id="django" />,
-    <Git name="Git" id="git" />,
-
+  const technologies = [
+    { name: "React", logo: reactLogo, id: "react" },
+    { name: "TypeScript", logo: typescriptLogo, id: "typescript" },
+    { name: "Angular", logo: angularLogo, id: "angular" },
+    { name: "Tailwind CSS", logo: tailwindLogo, id: "tailwindcss" },
+    { name: "Django", logo: djangoLogo, id: "django" },
+    { name: "PostgreSQL", logo: postgresqlLogo, id: "postgresql" },
+    { name: "Docker", logo: dockerLogo, id: "docker" },
+    { name: "AWS", logo: awsLogo, id: "aws" },
+    { name: "Azure", logo: azureLogo, id: "azure" },
+    { name: ".NET", logo: dotnetLogo, id: "dotnet" },
   ];
 
   return (
@@ -37,38 +32,22 @@ const About = () => {
           <img alt="profile" width='100%' className='profileImg' src='/prof-pic.jpeg' />
         </div>
         <h4 className="title">Nathan Perfetti</h4>
-        <h5 className="title2 font-italic">Certified Full Stack Web Developer & Educator</h5>
+        <h5 className="title2 font-italic">Seasoned Software Engineer</h5>
 
-        <p className="card-text px-4 py-2">
-          I believe strongly in the power of well-crafted software. Feel free to reach out for a collaborator or consultant on your next project. I enjoy
-          learning new languages and building clean, responsive, and functional
-          web apps using...
+        <p className="card-text px-4 py-4">
+          I build scalable web applications using modern technologies and frameworks. 
+          Focused on delivering clean, efficient solutions for complex problems. 
         </p>
-        <div className="row mb-3">
-          {images.map((image, index) => (
-            <div className="col-lg-2 col-md-3 col-4" key={index}>
-              <div className="img-fluid svg-img p-2">{image}</div>
-              <div className="my-1 svgNames">{image.props.name}</div>
+        <h5 className="title2 font-italic">Technologies I Use</h5>
+        <div className="tech-grid">
+          {technologies.map((tech, index) => (
+            <div className="tech-item" key={index}>
+              <div className="svg-img" id={tech.id}>
+                <img src={tech.logo} alt={tech.name} />
+              </div>
+              <div className="svgNames">{tech.name}</div>
             </div>
           ))}
-        </div>
-        <a
-          className="github-button"
-          href="https://github.com/perfettiful"
-          data-size="large"
-          aria-label="@perfettiful GitHub">
-          @perfettiful GitHub
-        </a>
-        <div className="linked-in">
-          <a
-            className="linked-size btn btn-sm btn-outline-primary"
-            id="linked-in"
-            href="https://www.linkedin.com/in/nathanperfetti/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i className="mx-1 linked-size fab fa-linkedin icon-small" />
-            LinkedIn
-          </a>
         </div>
       </div>
     </div>

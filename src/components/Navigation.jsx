@@ -8,7 +8,6 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
-import { Animated } from "react-animated-css";
 
 class Navigation extends Component {
   state = {
@@ -20,39 +19,76 @@ class Navigation extends Component {
       isOpen: !this.state.isOpen
     });
   };
+
+  handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    // Close mobile menu after clicking
+    this.setState({ isOpen: false });
+  };
   render() {
     return (
-      <div className="sticky-top shadow">
-        <Navbar color="light" dark fixed="fixed" expand="md">
-          <Animated animationIn="slideInDown">
-            <NavbarBrand className="text-light" href="#">
-              {"[ "}
-              {"\u00A0"}nathan perfetti{"\u00A0"}
-              {" ]"}
-            </NavbarBrand>
-          </Animated>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink onClick={this.toggle} className="link" href="#about">
-                  About
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink onClick={this.toggle} className="link" href="#contact">
-                  Contact
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="link" href="/Nathan-Perfetti-Resume-10-25.pdf" target="_blank" rel="noopener noreferrer">
-                  Resume
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+      <Navbar color="light" dark expand="md" className="fixed-top">
+        <NavbarBrand className="text-light" href="#">
+          {"[ "}
+          {"\u00A0"}nathan perfetti{"\u00A0"}
+          {" ]"}
+        </NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto d-flex align-items-center" navbar>
+            <NavItem>
+              <NavLink className="link" href="/Nathan-Perfetti-Resume-10-25.pdf" target="_blank" rel="noopener noreferrer">
+                Resume
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink 
+                onClick={(e) => this.handleSmoothScroll(e, 'youtube-section')} 
+                className="link" 
+                href="#tutorials"
+              >
+                Tutorials
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink 
+                onClick={(e) => this.handleSmoothScroll(e, 'contact')} 
+                className="link" 
+                href="#contact"
+              >
+                Contact
+              </NavLink>
+            </NavItem>
+            <div className="social-links">
+              <a 
+                href="https://github.com/perfettiful" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-link"
+                title="GitHub"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/nathanperfetti/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-link"
+                title="LinkedIn"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </Nav>
+        </Collapse>
+      </Navbar>
     );
   }
 }
