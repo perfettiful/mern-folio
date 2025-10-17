@@ -7,7 +7,7 @@ import djangoLogo from '../images/django.svg';
 import postgresqlLogo from '../images/postgresql.svg';
 import dockerLogo from '../images/docker.svg';
 import awsLogo from '../images/aws.svg';
-import azureLogo from '../images/azure.svg';
+import azureLogo from '../images/azure.png';
 import dotnetLogo from '../images/dotnet.png';
 
 
