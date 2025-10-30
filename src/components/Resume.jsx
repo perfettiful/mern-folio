@@ -8,14 +8,14 @@ const Resume = () => {
         <Col md="12" xs="12">
           <div style={{ width: '100%', height: '85vh', padding: '10px' }}>
             <iframe
-              src="/Nathan-Perfetti-Resume-1025.pdf"
+              src="/NathanPerfetti-Resume-1025.pdf"
               width="100%"
               height="100%"
               style={{ border: 'none' }}
               title="Nathan Perfetti Resume"
             >
               <p>Your browser does not support PDFs. 
-                <a href="/Nathan-Perfetti-Resume-1025.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/NathanPerfetti-Resume-1025.pdf" target="_blank" rel="noopener noreferrer">
                   Download the PDF
                 </a>
               </p>
